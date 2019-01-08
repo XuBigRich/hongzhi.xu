@@ -1,0 +1,11 @@
+类的实例化:
+Class a=class.forName("");
+a.newInstance();
+调用构造参数：
+Class a=class.forName("");
+Constructor constructor=a.getConstructor("(构造方法的参数的类类型)");
+Bean bean=constructor.newInstance("构造方法参数");
+调用方法：
+Class a=class.forName("");
+Method=a.getDeclaredMethod("(方法名)",.....参数的类类型);
+Method.invoke(object(对象),parameter());
